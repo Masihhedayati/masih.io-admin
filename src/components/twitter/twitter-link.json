@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_twitter_twitter_links",
+  "info": {
+    "displayName": "twitterLink"
+  },
+  "options": {},
+  "attributes": {
+    "link": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

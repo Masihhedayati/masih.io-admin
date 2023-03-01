@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_github_github_links",
+  "info": {
+    "displayName": "githubLink",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "repoLink": {
+      "type": "string",
+      "required": true
+    },
+    "username": {
+      "type": "string",
+      "required": true
+    },
+    "repositoryName": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

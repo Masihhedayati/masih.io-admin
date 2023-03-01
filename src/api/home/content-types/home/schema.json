@@ -1,0 +1,44 @@
+{
+  "kind": "singleType",
+  "collectionName": "homes",
+  "info": {
+    "singularName": "home",
+    "pluralName": "homes",
+    "displayName": "home",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "bio": {
+      "type": "richtext",
+      "required": true
+    },
+    "overview": {
+      "type": "richtext",
+      "required": true
+    },
+    "follow": {
+      "type": "component",
+      "repeatable": true,
+      "component": "follow.follow"
+    },
+    "twitter": {
+      "type": "component",
+      "repeatable": false,
+      "component": "twitter.twitter-link"
+    },
+    "github": {
+      "type": "component",
+      "repeatable": false,
+      "component": "github.github-link"
+    },
+    "pageHeading": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page-name.page-title"
+    }
+  }
+}

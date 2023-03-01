@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "photography_tags",
+  "info": {
+    "singularName": "photography-tag",
+    "pluralName": "photography-tags",
+    "displayName": "photographyTag",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "tagName": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "photographies": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::photography.photography",
+      "inversedBy": "photography_tags"
+    }
+  }
+}

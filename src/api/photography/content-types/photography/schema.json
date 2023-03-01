@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "photographies",
+  "info": {
+    "singularName": "photography",
+    "pluralName": "photographies",
+    "displayName": "photography",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "view": {
+      "type": "integer",
+      "default": 0
+    },
+    "cameraInfo": {
+      "type": "string"
+    },
+    "photography_tags": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::photography-tag.photography-tag",
+      "inversedBy": "photographies"
+    }
+  }
+}
