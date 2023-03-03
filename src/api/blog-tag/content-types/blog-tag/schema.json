@@ -4,7 +4,8 @@
   "info": {
     "singularName": "blog-tag",
     "pluralName": "blog-tags",
-    "displayName": "blogTag"
+    "displayName": "blogTag",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
