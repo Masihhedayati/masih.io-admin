@@ -7,17 +7,25 @@ module.exports = [
         useDefaults: true,
         directives: {
           "connect-src": ["'self'", "https:"],
-          "img-src": ["'self'", "data:", "blob:", "res.cloudinary.com"],
-          "media-src": ["'self'", "data:", "blob:", "res.cloudinary.com"],
+          "img-src": [
+            "'self'",
+            "data:",
+            "blob:",
+            "market-assets.strapi.io",
+            "res.cloudinary.com",
+          ],
+          "media-src": [
+            "'self'",
+            "data:",
+            "blob:",
+            "market-assets.strapi.io",
+            "res.cloudinary.com",
+          ],
           upgradeInsecureRequests: null,
         },
       },
     },
   },
-  "strapi::cors",
-  "strapi::poweredBy",
-  "strapi::logger",
-  "strapi::query",
   {
     name: "strapi::body",
     config: {
@@ -25,10 +33,14 @@ module.exports = [
       jsonLimit: "256mb", // modify JSON body
       textLimit: "256mb", // modify text body
       formidable: {
-        maxFileSize: 200 * 1024 * 1024, // multipart data, modify here limit of uploaded file size
+        maxFileSize: 250 * 1024 * 1024, // multipart data, modify here limit of uploaded file size
       },
     },
   },
+  "strapi::cors",
+  "strapi::poweredBy",
+  "strapi::logger",
+  "strapi::query",
   "strapi::session",
   "strapi::favicon",
   "strapi::public",
